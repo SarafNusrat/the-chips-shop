@@ -1,0 +1,63 @@
+[
+    {
+        "id" : 1,
+        "name" : "Mr. Twist",
+        "price" : 15,
+        "image" : "/src/images/Mr twist.jpg"
+    },
+    {
+        "id" : 2,
+        "name" : "Alooz",
+        "price" : 12,
+        "image" : "/src/images/alooz.jpg"
+    },
+    {
+        "id" : 3,
+        "name" : "Detos",
+        "price" : 15,
+        "image" : "/src/images/detos.jpg"
+    },
+    {
+        "id" : 4,
+        "name" : "Eggy Pillow",
+        "price" : 10,
+        "image" : "/src/images/eggy-pillow.jpg"
+    },
+    {
+        "id" : 5,
+        "name" : "Eggy Stix",
+        "price" : 12,
+        "image" : "/src/images/eggy-stix.jpg"
+    },
+    {
+        "id" : 6,
+        "name" : "Kurkure",
+        "price" : 20,
+        "image" : "/src/images/kurkure.jpg"
+    },
+    {
+        "id" : 7,
+        "name" : "Nachoz",
+        "price" : 15,
+        "image" : "/src/images/nachoz.jpg"
+    },
+    {
+        "id" : 8,
+        "name" : "Pastazz",
+        "price" : 20,
+        "image" : "/src/images/pastazz.jpg"
+    },
+    {
+        "id" : 9,
+        "name" : "Ring Chips",
+        "price" : 10,
+        "image" : "/src/images/ring chips.jpg"
+    },
+    {
+        "id" : 10,
+        "name" : "Sun Chips",
+        "price" : 15,
+        "image" : "/src/images/sun-chips.jpg"
+    },
+
+]
