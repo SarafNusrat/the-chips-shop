@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './Cart.css';
+import Random from '../Random/Random';
 
 const Cart = ({cart}) => {
+   const [random, setRandom] = useState({});
    let items = [];
 
     for (const prod of cart)
@@ -9,7 +11,7 @@ const Cart = ({cart}) => {
         items.push(prod);
     }
    
-    let selectedItems = [];
+    let selectedItems = {};
 
     const handleDelete = (items) => {
         for (const item of items)
@@ -20,9 +22,8 @@ const Cart = ({cart}) => {
     }
 
     const handleChooseOne = (items) => {
-        console.log('clicked');
         selectedItems = items[Math.floor(Math.random() * items.length)];
-        console.log(selectedItems);
+        console.log(selectedItems.name);
     }
 
     return (
@@ -31,8 +32,16 @@ const Cart = ({cart}) => {
             <p>{items.map((item)=> <li key={item.id}>{item.name}</li>)}</p>
             <div className='cart-btn'>
                 <button onClick={() => handleChooseOne(items)}>CHOOSE ONE FOR ME</button>
+                <p>{selectedItems.name}</p>
+                <div>
+                <Random
+                   random={selectedItems}
+                   handleChooseOne={handleChooseOne}>
+                </Random>
+                </div>
                 <button onClick={() => handleDelete(items)}>CHOOSE AGAIN</button>
             </div>
+            
         </div>
     );
 };
